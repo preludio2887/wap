@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+body {
+    background: #fff;
+    color: #333;
+}
+
+#warp {
+    width: 100%;
+}
+.hader {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background: rgb(45, 45, 78);
+}
+.hader .inner {
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(188, 188, 201);
+}
+
+.nav {
+    width: 1000px;
+    background: gray;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+.nav > ul {
+    display: flex;
+}
+.nav > ul > li {
+    position: relative;
+}
+.nav > ul > li > a {
+    display: block;
+    padding: 20px 40px;
+    background: #1b4965;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+.nav > ul > li:hover > a,
+.nav > ul > li > a:focus {
+    background: #353535;
+    color: white;
+}
+.nav > ul > li > ul {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.nav > ul > li > ul > li > a {
+    display: block;
+    padding: 10px;
+    background: #5fa8d3;
+    font-weight: bold;
+    color: black;
+}
+.nav > ul > li > ul > li:hover > a,
+.nav > ul > li > ul > li > a:focus {
+    background: #353535;
+    color: white;
+}
+
+.slider {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider ul {
+    width: 100%;
+    position: relative;
+}
+.slider ul li {
+    width: 1000px;
+    height: 550px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slider ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slider ul .s1 a{
+    background: url(../img/프레데릭.png) no-repeat center/cover;
+}
+.slider ul .s2 a{
+    background: url(../img/GO2.jpg) no-repeat center/cover;
+}
+.slider ul .s3 a{
+    background: url(../img/ReoNa.png) no-repeat center/cover;
+}
+.slider ul .s4 a{
+    background: url(../img/Alexandros_spaceshower.png) no-repeat center/cover;
+}
+.con {
+    width: 1200px;
+    height: 300px;
+    background: gray;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con1 {
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around; /* Spread items evenly with space around */
+    align-items: center;
+}
+
+.con1 ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.con1 ul li {
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0 10px; /* Adjust margin for spacing between items */
+}
+
+.con1 ul li img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.footer {width: 100%; height: 100px; background: #d9d9d9;}
+.footer .inner {width: 1200px; height: 100px; background: #a4a4a4;
+    margin: 0 auto; display: flex;}
+.footer1 {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer2 {
+    width: 1000px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fpopup{width: 500px;height: 200px;border: 1px solid black;}
+.fpopup {position: absolute; top:50%; left: 50%;transform: translate(-50%, -50%); background: rgb(233, 233, 233);text-align: center; padding: 20px; z-index: 9999; display: none;}
+.fpopup h2 {text-shadow: 5px 5px 5px ; }
+.fpopup .img {margin: 10px;}
+.fpopup .text {}
+.fpopup .text  {font-size: 20px;}
+.fpopup .text {font-weight: bold;}
+.fpopup .button {text-align: right; margin-top: 10px;}
+.fpopup button {padding: 10px 15px; font-weight: bold;}
+
+.gpopup{width: 500px;height: 200px;border: 1px solid black;}
+.gpopup {position: absolute; top:50%; left: 50%;transform: translate(-50%, -50%); background: rgb(233, 233, 233);text-align: center; padding: 20px; z-index: 9999; display: none;}
+.gpopup h2 {text-shadow: 5px 5px 5px ; }
+.gpopup .img {margin: 10px;}
+.gpopup .text {}
+.gpopup .text  {font-size: 20px;}
+.gpopup .text {font-weight: bold;}
+.gpopup .button {text-align: right; margin-top: 10px;}
+.gpopup button {padding: 10px 15px; font-weight: bold;}
+
+.rpopup{width: 500px;height: 200px;border: 1px solid black;}
+.rpopup {position: absolute; top:50%; left: 50%;transform: translate(-50%, -50%); background: rgb(233, 233, 233);text-align: center; padding: 20px; z-index: 9999; display: none;}
+.rpopup h2 {text-shadow: 5px 5px 5px ; }
+.rpopup .img {margin: 10px;}
+.rpopup .text {}
+.rpopup .text  {font-size: 20px;}
+.rpopup .text {font-weight: bold;}
+.rpopup .button {text-align: right; margin-top: 10px;}
+.rpopup button {padding: 10px 15px; font-weight: bold;}
+
+.apopup{width: 500px;height: 200px;border: 1px solid black;}
+.apopup {position: absolute; top:50%; left: 50%;transform: translate(-50%, -50%); background: rgb(233, 233, 233);text-align: center; padding: 20px; z-index: 9999; display: none;}
+.apopup h2 {text-shadow: 5px 5px 5px ; }
+.apopup .img {margin: 10px;}
+.apopup .text {}
+.apopup .text  {font-size: 20px;}
+.apopup .text {font-weight: bold;}
+.apopup .button {text-align: right; margin-top: 10px;}
+.apopup button {padding: 10px 15px; font-weight: bold;}
